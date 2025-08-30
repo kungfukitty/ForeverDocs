@@ -1,9 +1,0 @@
-{
-  "name": "foreverdocs-root-proxy",
-  "private": true,
-  "scripts": {
-    "build": "cd src && yarn build",
-    "start": "cd src && yarn start",
-    "install": "cd src && yarn install"
-  }
-}
