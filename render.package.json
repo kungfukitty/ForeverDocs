@@ -1,0 +1,12 @@
+{
+  "name": "foreverdocs-render-backend-proxy",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "install": "cd backend && npm install",
+    "build": "echo \"No build step for backend\"",
+    "start": "cd backend && npm start"
+  }
+}
