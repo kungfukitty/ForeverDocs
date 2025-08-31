@@ -1,6 +1,7 @@
 // src/pages/Sponsor.tsx
 import React, { useState } from 'react'
 import { FormShell, Field, Input, Select, SubmitBar } from '../components/forms/FormShell'
+import { isValidEmail, isValidName, isValidOrganization } from '../utils/validation'
 
 type Budget = 'under5k' | '5to25' | '25to100' | '100plus'
 
