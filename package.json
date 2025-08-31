@@ -1,0 +1,15 @@
+{
+  "name": "foreverdocs",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm --workspace frontend run dev",
+    "build": "npm --workspace frontend run build",
+    "preview": "npm --workspace frontend run preview",
+    "start:backend": "npm --workspace backend start",
+    "dev:backend": "npm --workspace backend run dev"
+  }
+}

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+.container { @apply max-w-6xl mx-auto px-4; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium shadow-glow transition; }
+.btn-primary { @apply bg-gold text-black hover:opacity-90; }
+.card { @apply bg-panel rounded-2xl p-6 shadow-glow; }
+.link { @apply text-gold underline underline-offset-4 hover:opacity-90; }
