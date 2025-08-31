@@ -64,7 +64,7 @@ export default function WaitingListPage() {
           )}
 
           <div className="mt-4 text-sm text-zinc-500 text-center">
-            Questions? Contact us at <span className="text-zinc-300">hello@foreverdocs.example</span>
+            Questions? Contact us at <span className="text-zinc-300">contact@foreverdocs.org</span>
           </div>
         </div>
       </div>
