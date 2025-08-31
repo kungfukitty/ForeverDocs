@@ -6,23 +6,53 @@ export default function Home() {
     <main className="bg-gradient-to-b from-black via-zinc-950 to-black text-zinc-100">
       {/* HERO */}
       <section className="max-w-6xl mx-auto px-6 pt-12 pb-10">
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          <div>
-            <h1 className="text-4xl font-extrabold">ForeverDocs</h1>
-            <p className="mt-3 text-zinc-300 text-lg">
-              Protecting Black family legacies with secure, community-rooted digital vaults.
-            </p>
-            <div className="mt-6 flex gap-3">
-              <Link to="/waiting-list" className="px-4 py-2 rounded-xl bg-white text-black font-medium hover:bg-zinc-200">Join the Waitlist</Link>
-              <Link to="/impact" className="px-4 py-2 rounded-xl border border-zinc-700 text-zinc-200 hover:bg-zinc-900">Learn More</Link>
-            </div>
-          </div>
-          <div className="rounded-2xl border border-zinc-800 p-4">
-            <div className="aspect-video rounded-xl bg-zinc-950 border border-zinc-800 flex items-center justify-center text-zinc-500">
-              Public Crest Preview
-            </div>
+       // Replace the placeholder with this mini crest card
+<div className="rounded-2xl border border-zinc-800 p-4">
+  <div className="rounded-xl border border-zinc-800 bg-zinc-950 p-6">
+    {/* crest header */}
+    <div className="flex items-center gap-4">
+      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600" />
+      <div>
+        <div className="text-xl font-bold">Johnson Family Digital Crest</div>
+        <div className="text-zinc-400 text-sm">DEED • TN/Hamilton</div>
+      </div>
+    </div>
+
+    {/* crest body */}
+    <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
+      <div>
+        <div className="text-zinc-400">Verification Code</div>
+        <div className="font-mono">JF-2025-7XK</div>
+      </div>
+      <div>
+        <div className="text-zinc-400">Registered</div>
+        <div>Aug 31, 2025, 2:15 PM</div>
+      </div>
+      <div className="col-span-2">
+        <div className="text-zinc-400 mb-1">Public Notes</div>
+        <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-3 text-zinc-300">
+          Prepared with ForeverDocs pilot, 2025
+        </div>
+      </div>
+    </div>
+
+    {/* tiny QR stub + explain */}
+    <div className="mt-4 grid grid-cols-2 gap-4">
+      <div className="flex items-center justify-center aspect-square rounded-xl border border-zinc-800 bg-zinc-950">
+        <div className="text-[10px] text-zinc-500 text-center px-3">
+          QR (demo)
+          <div className="mt-1 font-mono break-all">
+            {"{" + "\"v\":1,\"vc\":\"JF-2025-7XK\",\"t\":\"DEED\",\"j\":\"TN/Hamilton\"" + "}"}
           </div>
         </div>
+      </div>
+      <div className="text-xs text-zinc-400">
+        Scan to resolve <span className="font-mono">/verify/JF-2025-7XK</span>. In production, the QR payload is minimal; the server renders details.
+      </div>
+    </div>
+  </div>
+</div>
+         
       </section>
 
       {/* PROBLEM */}
