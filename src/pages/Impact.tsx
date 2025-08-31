@@ -65,7 +65,7 @@ export default function ImpactPage() {
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 text-center">
               <div className="text-3xl font-bold text-amber-400">3</div>
               <div className="text-sm text-zinc-400 mt-1">Cities Ready</div>
-              <div className="text-xs text-zinc-500 mt-2">Atlanta, Nashville, Memphis</div>
+              <div className="text-xs text-zinc-500 mt-2">Atlanta, Nashville, Chattanooga</div>
             </div>
           </div>
         </section>
