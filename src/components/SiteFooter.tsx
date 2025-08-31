@@ -24,7 +24,7 @@ export default function SiteFooter() {
         </div>
         <div>
           <div className="text-zinc-300 font-medium">Contact</div>
-          <p className="mt-2">hello@foreverdocs.example</p>
+          <p className="mt-2">contact@foreverdocs.org</p>
         </div>
       </div>
       <div className="text-xs text-zinc-500 text-center pb-6">© {new Date().getFullYear()} ForeverDocs</div>
