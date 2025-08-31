@@ -1,9 +1,12 @@
 {
-  "installCommand": "npm install",
-  "buildCommand": "npm --workspace frontend run build",
-  "outputDirectory": "frontend/dist",
-  "framework": "vite",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "name": "foreverdocs",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "build": "npm --workspace frontend run build",
+    "dev": "npm --workspace frontend run dev",
+    "preview": "npm --workspace frontend run preview",
+    "start:backend": "npm --workspace backend start",
+    "dev:backend": "npm --workspace backend run dev"
+  }
 }
