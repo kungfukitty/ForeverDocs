@@ -1,7 +1,11 @@
+// src/pages/WaitingList.tsx
 import React, { useMemo, useState } from 'react'
 import { FormShell, Field, Input, Select, SubmitBar, Textarea } from '../components/forms/FormShell'
 
 type Role = 'Parent' | 'Student' | 'Educator' | 'Other'
+
+// Shared email validation utility
+const isValidEmail = (email: string): boolean => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 
 export default function WaitingListPage() {
   const [name, setName] = useState('')
@@ -11,7 +15,7 @@ export default function WaitingListPage() {
   const [referral, setReferral] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  const validEmail = useMemo(() => /.+@.+\..+/.test(email), [email])
+  const validEmail = useMemo(() => isValidEmail(email), [email])
   const canSubmit = name.trim().length >= 2 && validEmail
 
   function onSubmit(e: React.FormEvent) {
@@ -37,11 +41,22 @@ export default function WaitingListPage() {
   return (
     <FormShell title="Join the Waiting List" subtitle="We will notify you when ForeverDocs launches in your area.">
       <form onSubmit={onSubmit} className="grid gap-4">
-        <Field label="Full name">
-          <Input value={name} onChange={e => setName(e.target.value)} placeholder="Ada Lovelace" />
+        <Field label="Full name *">
+          <Input 
+            value={name} 
+            onChange={e => setName(e.target.value)} 
+            placeholder="Ada Lovelace"
+            required
+          />
         </Field>
         <Field label="Email *">
-          <Input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="contact@foreverdocs.org" required />
+          <Input 
+            type="email" 
+            value={email} 
+            onChange={e => setEmail(e.target.value)} 
+            placeholder="contact@foreverdocs.org" 
+            required 
+          />
         </Field>
         <div className="grid md:grid-cols-2 gap-4">
           <Field label="Role">
@@ -53,11 +68,20 @@ export default function WaitingListPage() {
             </Select>
           </Field>
           <Field label="Referral Code (optional)">
-            <Input value={referral} onChange={e => setReferral(e.target.value)} placeholder="e.g., CREST100" />
+            <Input 
+              value={referral} 
+              onChange={e => setReferral(e.target.value)} 
+              placeholder="e.g., CREST100" 
+            />
           </Field>
         </div>
         <Field label="How did you hear about us?">
-          <Textarea rows={3} value={heard} onChange={e => setHeard(e.target.value)} placeholder="Pastor, school counselor, clinic, social media…" />
+          <Textarea 
+            rows={3} 
+            value={heard} 
+            onChange={e => setHeard(e.target.value)} 
+            placeholder="Pastor, school counselor, clinic, social media…" 
+          />
         </Field>
         <SubmitBar canSubmit={canSubmit} cta="Join List" />
       </form>
