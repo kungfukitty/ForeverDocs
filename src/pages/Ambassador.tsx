@@ -1,6 +1,8 @@
 // src/pages/Ambassador.tsx
 import React, { useState } from 'react'
 import { FormShell, Field, Input, Textarea, SubmitBar } from '../components/forms/FormShell'
+import { isValidEmail, isValidName } from '../utils/validation'
+
 
 // Shared email validation utility
 const isValidEmail = (email: string): boolean => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
