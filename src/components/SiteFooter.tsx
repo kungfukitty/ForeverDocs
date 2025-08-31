@@ -1,3 +1,4 @@
+// src/components/SiteFooter.tsx
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -17,6 +18,8 @@ export default function SiteFooter() {
           <ul className="mt-2 space-y-1">
             <li><Link to="/" className="hover:text-white">Home</Link></li>
             <li><Link to="/demo" className="hover:text-white">Demo</Link></li>
+            <li><Link to="/impact" className="hover:text-white">Impact</Link></li>
+            <li><Link to="/press" className="hover:text-white">Press</Link></li>
             <li><Link to="/waiting-list" className="hover:text-white">Waiting List</Link></li>
             <li><Link to="/sponsor" className="hover:text-white">Sponsor</Link></li>
             <li><Link to="/ambassador" className="hover:text-white">Ambassador</Link></li>
@@ -25,6 +28,7 @@ export default function SiteFooter() {
         <div>
           <div className="text-zinc-300 font-medium">Contact</div>
           <p className="mt-2">contact@foreverdocs.org</p>
+          <p className="mt-1">press@foreverdocs.org</p>
         </div>
       </div>
       <div className="text-xs text-zinc-500 text-center pb-6">© {new Date().getFullYear()} ForeverDocs</div>
