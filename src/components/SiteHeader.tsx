@@ -1,3 +1,4 @@
+// src/components/SiteHeader.tsx
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -16,7 +17,9 @@ export default function SiteHeader() {
         <nav className="flex items-center gap-1" aria-label="Primary">
           <NavLink to="/" className={active} end>Home</NavLink>
           <NavLink to="/demo" className={active}>Demo</NavLink>
-          <NavLink to="/waiting-list" className={active}>Waiting List</NavLink>
+          <NavLink to="/impact" className={active}>Impact</NavLink>
+          <NavLink to="/press" className={active}>Press</NavLink>
+          <NavLink to="/waiting-list" className={active}>Waitlist</NavLink>
           <NavLink to="/sponsor" className={active}>Sponsor</NavLink>
           <NavLink to="/ambassador" className={active}>Ambassador</NavLink>
         </nav>
