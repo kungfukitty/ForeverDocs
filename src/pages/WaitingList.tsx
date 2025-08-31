@@ -41,7 +41,7 @@ export default function WaitingListPage() {
           <Input value={name} onChange={e => setName(e.target.value)} placeholder="Ada Lovelace" />
         </Field>
         <Field label="Email *">
-          <Input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com" required />
+          <Input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="contact@foreverdocs.org" required />
         </Field>
         <div className="grid md:grid-cols-2 gap-4">
           <Field label="Role">
