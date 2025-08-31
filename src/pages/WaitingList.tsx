@@ -1,6 +1,8 @@
 // src/pages/WaitingList.tsx
 import React, { useMemo, useState } from 'react'
 import { FormShell, Field, Input, Select, SubmitBar, Textarea } from '../components/forms/FormShell'
+import { isValidEmail, isValidName } from '../utils/validation'
+
 
 type Role = 'Parent' | 'Student' | 'Educator' | 'Other'
 
