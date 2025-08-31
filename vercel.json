@@ -1,5 +1,0 @@
-{
-  "framework": null,
-  "installCommand": "echo 'Skipping install command for static HTML site.'",
-  "buildCommand": "echo 'Skipping build command for static HTML site.'"
-}
