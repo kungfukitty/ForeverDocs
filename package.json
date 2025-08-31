@@ -1,5 +1,5 @@
 {
-  "name": "foreverdocs-mvp-sim",
+  "name": "foreverdocs",
   "private": true,
   "version": "1.1.1",
   "type": "module",
@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:smartquotes": "node tests/smartQuotesCheck.mjs"
+    "test:smartquotes": "node tests/smartQuotesCheck.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^18.3.1",
